@@ -1,0 +1,81 @@
+/* CSS for Add Tasks Button*/
+.fa-plus{
+  margin: .5em;
+}
+
+button{
+  padding: .25em .75em;
+  cursor: pointer;
+  font-weight: bold;
+
+}
+
+.addTaskBtn {
+
+  /*padding: .75em;*/
+  margin-top: 1em;
+  background-color: #E66029;
+  color: white;
+  border: 2px solid black;
+  /*filter: drop-shadow(5px 5px 10px #a1411c);*/
+  /*border-right: 5px solid #a1411c;*/
+  /*border-bottom: 5px solid #a1411c;*/
+  border-radius: 10px;
+}
+
+.addTaskBtn:hover {
+  background-color: #ff6e32;
+}
+
+.addTaskBtn:active {
+  background-color: #a8330b;
+}
+
+/*CSS For Add Task Modal*/
+#addTaskModal {
+  margin: auto;
+  padding: 2em;
+  border-radius: 1em;
+  border:none;
+  filter: drop-shadow(3px 3px 10px black);
+
+}
+
+#addTaskModal::backdrop{
+  backdrop-filter: blur(5px);
+}
+
+.modal-header {
+  /*border-bottom: 1px solid black;*/
+  margin-bottom: 1em;
+
+}
+
+.modal-title{
+
+  font-weight: bold;
+  text-align: center;
+}
+
+.modal-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-spacing{
+  margin-bottom: 1em;
+  padding: .25em;
+  width: 100%;
+}
+
+.modal-footer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-footer-btn{
+  margin-left: 1em;
+}

@@ -5,7 +5,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>TimeSkip</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/components.css">
   <meta name="description" content="">
 
   <meta property="og:title" content="">
@@ -33,13 +34,44 @@
       <h2>🔥TimeSkip⚡</h2>
       <h3>Your Go-to Anime Inspired Todo List app</h3>
       <h4>Where will you be after the training arc?</h4>
-    </div>
-    <div id="button-container">
-      <button class="addTaskBtn" type="button"><i class="fa fa-plus"></i> Add Task</button>
+      <div id="button-container">
+        <button class="addTaskBtn" type="button"><i class="fa fa-plus"></i> Add Task</button>
+      </div>
+      <div id="todo-list-container">
+        <ul class="list-item"></ul>
+      </div>
     </div>
 
   </main>
-  <script src="js/app.js"></script>
+
+  <dialog id="addTaskModal" class="modal">
+      <form method="dialog">
+        <div class="modal-header">
+          <h3 class="modal-title">Add Task</h3>
+        </div>
+        <div class="modal-content">
+          <label for="new-task-name">Task Name:</label>
+          <input class= "input-spacing" type="text" name="task-name" id="new-task-name">
+          <label for="new-task-details">Task Details:</label>
+          <textarea class= "input-spacing" name="task-details" id="new-task-details" rows="4" cols="25"></textarea>
+          <label for="new-task-difficulty">Task Difficulty:</label>
+          <input class= "input-spacing" type="range" name="new-task-difficulty" id="new-task-difficulty" min="1" max="5" value="3" list="values">
+          <datalist id="values">
+            <option value="1" label="1"></option>
+            <option value="2" label="2"></option>
+            <option value="3" label="3"></option>
+            <option value="4" label="4"></option>
+            <option value="5" label="5"></option>
+          </datalist>
+        </div>
+        <div class="modal-footer">
+          <button class="modal-footer-btn" type="button">Cancel</button>
+          <button class="modal-footer-btn" type="button">Submit</button>
+        </div>
+      </form>
+
+  </dialog>
+  <script src="js/script.js"></script>
 
 </body>
 

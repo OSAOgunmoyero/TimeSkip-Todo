@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   line-height: 1.6;
+
 }
 
 #container {
@@ -34,29 +35,4 @@ h4 {
   font-weight: 300;
 }
 
-.fa-plus{
-  margin: .5em;
-}
 
-.addTaskBtn {
-  font-weight: bold;
-  cursor: pointer;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  padding: .75em;
-  margin: 3em;
-  background-color: #E66029;
-  color: white;
-  border: none;
-  border-right: 5px solid #a1411c;
-  border-bottom: 5px solid #a1411c;
-}
-
-.addTaskBtn:hover {
-  background-color: #ff6e32;
-}
-
-.addTaskBtn:active {
-  background-color: #a8330b;
-}
