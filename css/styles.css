@@ -51,11 +51,12 @@ h4 {
 }
 
 .fa-arrow-down{
-  transition: transform 0.5s;
+  transition: all 0.5s;
 }
 
 .fa-arrow-down:hover {
   transform: translateY(1rem);
+  color: #f36b3e;
 }
 
 #middle-section{
