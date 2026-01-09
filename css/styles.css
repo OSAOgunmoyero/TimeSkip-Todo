@@ -1,19 +1,26 @@
-* {
+*, html {
   font-family: 'Inter', sans-serif;
   margin: 0;
   padding: 0;
   line-height: 1.6;
-
+  scroll-behavior: smooth !important;
 }
 
-#container {
+
+section {
+  height: 100vh;
+}
+
+.container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100vh;
-
 }
+
+
+
 
 h1 {
   font-size: 1.5rem;
@@ -35,4 +42,26 @@ h4 {
   font-weight: 300;
 }
 
+.scroll-arrow {
+  font-size: 2.0rem;
+}
 
+.scroll-arrow{
+  color: orangered;
+}
+
+.fa-arrow-down{
+  transition: transform 0.5s;
+}
+
+.fa-arrow-down:hover {
+  transform: translateY(1rem);
+}
+
+#middle-section{
+  background-color: aqua;
+}
+
+#task-section {
+  background-color: cornflowerblue;
+}

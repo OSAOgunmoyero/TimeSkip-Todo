@@ -4,14 +4,14 @@
 }
 
 button{
-  padding: .25em .75em;
+  padding: .40em 1.82em;
   cursor: pointer;
   font-weight: bold;
+  border-radius: 10px;
 
 }
 
 .addTaskBtn {
-
   /*padding: .75em;*/
   margin-top: 1em;
   background-color: #E66029;
@@ -38,16 +38,27 @@ button{
   border-radius: 1em;
   border:none;
   filter: drop-shadow(3px 3px 10px black);
-
+  width: 15vw;
+  animation-name: pop-up;
+  animation-duration: 0.3s;
 }
 
 #addTaskModal::backdrop{
+  animation-name: blur-bg;
+  animation-duration: 0.3s;
   backdrop-filter: blur(5px);
+}
+
+.modal-open{
+  overflow: hidden;
 }
 
 .modal-header {
   /*border-bottom: 1px solid black;*/
   margin-bottom: 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
 }
 
@@ -57,25 +68,65 @@ button{
   text-align: center;
 }
 
+.close-modal-btn{
+  padding: 1em;
+  cursor: pointer;
+
+}
+
+.close-modal-btn:hover {
+  background-color: #ff6e32;
+}
+
+.close-modal-btn:active {
+  background-color: #a8330b;
+}
+
 .modal-content{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+
+}
+
+textarea {
+  resize: none;
 }
 
 .input-spacing{
   margin-bottom: 1em;
   padding: .25em;
   width: 100%;
+  text-align: left;
+}
+
+#new-task-difficulty {
+  margin-bottom: 2em;
 }
 
 .modal-footer{
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 
-.modal-footer-btn{
-  margin-left: 1em;
+
+/*Modal Animations*/
+@keyframes pop-up {
+  from {
+    scale: 0;
+  }
+
+  to {
+    scale: 1;
+  }
 }
+
+@keyframes blur-bg {
+  from {
+    backdrop-filter: blur(0px);
+  }
+
+  to {
+    backdrop-filter: blur(5px);
+  }
+}
+
+/*Media Queries for resizing*/
