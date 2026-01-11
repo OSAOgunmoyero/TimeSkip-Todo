@@ -31,7 +31,11 @@
   <section id="welcome-section">
     <div class="container">
       <h1>Hello!👋 Welcome To</h1>
-      <h2>🔥TimeSkip⚡</h2>
+      <div class="flex">
+        <div class="emoji-class">🔥</div>
+        <h2>TimeSkip</h2>
+        <div class="emoji-class">⚡</div>
+      </div>
       <h3>Your Go-to Anime Inspired Todo List app</h3>
       <h4>Where will you be after the training arc?</h4>
       <h5>Ready to start?</h5>
@@ -47,9 +51,18 @@
 
   </section>
 
-  <section id= "middle-section">
-
+  <section class= "middle-section">
   </section>
+
+  <section class= "middle-section">
+  </section>
+
+  <section class= "middle-section">
+  </section>
+
+  <section class= "middle-section">
+  </section>
+
 
 
   <section id="task-section">
@@ -60,13 +73,13 @@
           <form method="dialog">
             <div class="modal-header">
               <h3 class="modal-title">Add Task</h3>
-              <span><i class="fa fa-times close-modal-btn"></i></span>
+              <span><i class="fa fa-times fa-lg close-modal-btn"></i></span>
             </div>
             <div class="modal-content">
-              <label for="new-task-name">Task Name</label>
-              <input class= "input-spacing" type="text" name="task-name" id="new-task-name" placeholder="Enter Task Name...">
-              <label for="new-task-details">Task Details</label>
-              <textarea class= "input-spacing" name="task-details" id="new-task-details" rows="4" cols="25" placeholder="Enter Task Details..."></textarea>
+              <label for="task-name">Task Name</label>
+              <input class= "input-spacing" type="text" name="task-name" id="task-name" placeholder="Enter Task Name...">
+              <label for="task-details">Task Details</label>
+              <textarea class= "input-spacing" name="task-details" id="task-details" rows="10" cols="25" placeholder="Enter Task Details..."></textarea>
               <label for="new-task-difficulty">Task Difficulty</label>
               <input class= "input-spacing" type="range" name="new-task-difficulty" id="new-task-difficulty" min="1" max="5" value="3" list="difficulty-values">
               <datalist id="difficulty-values">
