@@ -38,7 +38,7 @@ button{
   border-radius: 1em;
   border:none;
   filter: drop-shadow(3px 3px 10px black);
-  width: 15vw;
+  width: 25vw;
   animation-name: pop-up;
   animation-duration: 0.3s;
 }
@@ -59,7 +59,6 @@ button{
   display: flex;
   justify-content: space-between;
   align-items: center;
-
 }
 
 .modal-title{
@@ -86,15 +85,20 @@ button{
 
 }
 
-textarea {
+textarea, input {
   resize: none;
-}
-
-.input-spacing{
   margin-bottom: 1em;
-  padding: .25em;
   width: 100%;
   text-align: left;
+  font-size: inherit;
+}
+
+textarea {
+  padding: .25em;
+}
+
+input {
+  padding: 10px .25em;
 }
 
 #new-task-difficulty {
@@ -104,7 +108,7 @@ textarea {
 .modal-footer{
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 
 
@@ -130,3 +134,17 @@ textarea {
 }
 
 /*Media Queries for resizing*/
+
+
+@media  only screen and (max-width: 665px){
+  .modal-footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  #addTaskModal {
+    height: 50vh;
+    width: 50vw;
+  }
+}

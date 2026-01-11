@@ -19,7 +19,9 @@ section {
   height: 100vh;
 }
 
-
+h1, h2, h3, h4 {
+  text-align: center;
+}
 
 
 h1 {
@@ -43,12 +45,10 @@ h4 {
 }
 
 .scroll-arrow {
-  font-size: 2.0rem;
-}
-
-.scroll-arrow{
+  font-size: 3.0rem;
   color: orangered;
 }
+
 
 .fa-arrow-down{
   transition: all 0.5s;
@@ -59,10 +59,35 @@ h4 {
   color: #f36b3e;
 }
 
-#middle-section{
+.middle-section{
   background-color: aqua;
 }
 
 #task-section {
   background-color: cornflowerblue;
+}
+
+.flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.emoji-class {
+  font-size: 4rem;
+  font-weight: 900;
+  text-align: center;
+}
+
+
+@media  only screen and (max-width: 480px){
+  .flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+  }
 }
