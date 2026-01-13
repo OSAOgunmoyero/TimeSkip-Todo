@@ -51,22 +51,31 @@
 
   </section>
 
-  <section class= "middle-section">
+  <section>
   </section>
 
-  <section class= "middle-section">
+  <section>
   </section>
 
-  <section class= "middle-section">
+  <section>
   </section>
 
-  <section class= "middle-section">
+  <section>
   </section>
 
 
 
   <section id="task-section">
+    <div class="top-bar">
+      <div class="search-box-area">
+        <span class="search-box-icon">
+        <input type="search" id="search-bar" placeholder="Search here..." name="search" size="70">
+          </span>
+      </div>
+      <div class="btn-box-area">
         <button class="addTaskBtn" type="button"><i class="fa fa-plus"></i> Add Task</button>
+      </div>
+    </div>
       </section>
 
       <dialog id="addTaskModal" class="modal">
@@ -80,15 +89,15 @@
               <input class= "input-spacing" type="text" name="task-name" id="task-name" placeholder="Enter Task Name...">
               <label for="task-details">Task Details</label>
               <textarea class= "input-spacing" name="task-details" id="task-details" rows="10" cols="25" placeholder="Enter Task Details..."></textarea>
-              <label for="new-task-difficulty">Task Difficulty</label>
-              <input class= "input-spacing" type="range" name="new-task-difficulty" id="new-task-difficulty" min="1" max="5" value="3" list="difficulty-values">
-              <datalist id="difficulty-values">
-                <option value="1" label="1"></option>
-                <option value="2" label="2"></option>
-                <option value="3" label="3"></option>
-                <option value="4" label="4"></option>
-                <option value="5" label="5"></option>
-              </datalist>
+              <p>Set Task Difficulty:</p>
+              <div class="radio-group">
+                <label for="easy" class="easy">Easy</label>
+                <input type="radio" name="difficulty-setting" id="easy" value="easy">
+                <label for="medium" class="medium">Medium</label>
+                <input type="radio" name="difficulty-setting" id="medium" value="medium">
+                <label for="hard" class="hard">Hard</label>
+                <input type="radio" name="difficulty-setting" id="hard" value="hard">
+              </div>
             </div>
             <div class="modal-footer">
               <button class="modal-footer-btn" type="button">Cancel</button>

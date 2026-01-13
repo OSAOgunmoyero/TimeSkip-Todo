@@ -13,7 +13,7 @@ button{
 
 .addTaskBtn {
   /*padding: .75em;*/
-  margin-top: 1em;
+
   background-color: #E66029;
   color: white;
   border: 2px solid black;
@@ -85,7 +85,7 @@ button{
 
 }
 
-textarea, input {
+#task-name, #task-details {
   resize: none;
   margin-bottom: 1em;
   width: 100%;
@@ -97,7 +97,7 @@ textarea {
   padding: .25em;
 }
 
-input {
+input[type="text"], input[type="search"] {
   padding: 10px .25em;
 }
 
@@ -133,6 +133,23 @@ input {
   }
 }
 
+.top-bar {
+  min-width: fit-content;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.radio-group {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 1em;
+}
+
+input[type="radio"] {
+  width: 20px;
+}
+
 /*Media Queries for resizing*/
 
 
@@ -146,5 +163,14 @@ input {
   #addTaskModal {
     height: 50vh;
     width: 50vw;
+  }
+}
+
+@media  only screen and (max-width: 665px){
+  .radio-group {
+    display: flex;
+    /*flex-direction: column;*/
+    justify-content: space-evenly;
+    margin-bottom: 1em;
   }
 }
